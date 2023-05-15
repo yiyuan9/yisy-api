@@ -1,3 +1,5 @@
+import Navbar from '@/components/Navbar'
+import Providers from '@/components/Providers'
 import { cn } from '@/lib/utils'
 import '@/styles/globals.css'
 import { Inter } from 'next/font/google'
@@ -18,7 +20,14 @@ export default function RootLayout({
     <html lang="en" className={cn(
       'bg-white text-slate-900 antialiased', inter.className
     )}>
-      <body className={inter.className}>{children}</body>
+      <body className='min-h-screen bg-slate-50 dark:bg-slate-900 antialiased'>
+        <Providers>{children}
+          {/* @ts-expect-error Server Component */}
+          <Navbar />
+        </Providers>
+        {/* To avoid bottom menu affects on mobile devices by adding extra spaces */}
+        <div className='h-40 md:hidden' />
+      </body>
     </html>
   )
 }
