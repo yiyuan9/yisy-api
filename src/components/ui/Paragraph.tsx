@@ -26,6 +26,4 @@ const Paragraph = forwardRef<HTMLParagraphElement, ParagraphProps>(({
 
 Paragraph.displayName = 'Paragraph'
 
-console.log(paragraphVariants)
-
 export default Paragraph 

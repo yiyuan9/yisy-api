@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.dark .three-d {
+  text-shadow: 0px 5px 0px #825f3f
+}
+
+.three-d {
+  text-shadow: none;
+}
