@@ -23,8 +23,8 @@ module.exports = {
       },
       colors: {
         ...colors,
-        'dark-theme-color': '#007CF0',
-        'light-theme-color': '#9ac0e3',
+        'dark-theme-color': '#FD993D',
+        'light-theme-color': '#f9c52a',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
