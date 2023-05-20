@@ -55,8 +55,8 @@ const RequestApiKey: FC = () => {
           ) : null}
           <Input readOnly value={apiKey ?? ''} placeholder='Request an API key to display it here' />
         </div>
-        <div className='mt-3 sm:mt-0 sm:flex-shrink-0'>
-          <Button isLoading={isCreating}>Request key</Button>
+        <div className='mt-3 flex justify-center sm:mt-0 sm:ml-4 sm:flex-shrink-0'>
+          <Button isLoading={!!apiKey}>Request key</Button> 
         </div>
       </form>
     </div>
